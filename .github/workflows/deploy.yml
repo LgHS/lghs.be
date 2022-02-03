@@ -18,6 +18,9 @@ jobs:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
       - name: Checkout branch
         uses: actions/checkout@v2
+        with:
+          lfs: true
+          token: ${{ secrets.ACCESS_TOKEN }}
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
 
