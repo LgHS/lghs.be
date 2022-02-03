@@ -6,6 +6,8 @@
 
 module.exports = {
   siteName: 'Liège HackerSpace',
+  siteUrl: 'https://lghs.github.io',
+  pathPrefix: '/lghs.be',
   plugins: [
     'gridsome-plugin-brotli',
     {

@@ -4,7 +4,9 @@
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@creativebulma/bulma-tooltip": "^1.2.0",
@@ -14,6 +16,7 @@
     "@gridsome/vue-remark": "^0.2.6",
     "axios": "^0.24.0",
     "bulma": "^0.9.3",
+    "gh-pages": "^3.2.3",
     "gridsome": "^0.7.0",
     "gridsome-plugin-brotli": "^0.1.3",
     "gridsome-plugin-gtm": "^0.1.1"
