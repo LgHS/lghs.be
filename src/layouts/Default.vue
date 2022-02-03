@@ -40,7 +40,7 @@
           <div class="tile is-parent">
             <article class="tile is-child box">
               <p class="title">Communiquez</p>
-              <p class="subtitle">avec nous</p>
+              <p class="subtitle">avec nous!</p>
               <div class="content">
                 <div>
                   <strong>Mail</strong>: ping<i>[at]</i>lghs.be
