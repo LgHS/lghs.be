@@ -200,7 +200,6 @@ footer .name {
   padding-left: 1em;
   padding-right: 1em;
   padding-top: calc(0.5em - 1px);
-  border-radius: 0.4em;
   font-size: 15px;
   height: 4.3rem;
   width: 100%;
