@@ -202,7 +202,7 @@ footer .name {
   padding-top: calc(0.5em - 1px);
   border-radius: 0.4em;
   font-size: 15px;
-  height: 3.8rem;
+  height: 4.3rem;
   width: 100%;
 }
 
@@ -226,14 +226,14 @@ footer .name {
   background: #0079C1;
   color: #00457C;
   border: 1px solid #00457C;
-  height: 3.8rem;
+  height: 4.3rem;
   width: 100%;
 }
 .patreon {
   background: #f96854;
   color: #052d49;
   border: 1px solid #052d49;
-  height: 3.8rem;
+  height: 4.3rem;
   width: 100%;
 }
 
