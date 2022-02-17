@@ -63,3 +63,7 @@ div.column.is-8:first-child {
 .promo-block .container {
   margin: 1rem 5rem;
 }
+
+.button, .file-cta, .file-name, .input, .pagination-ellipsis, .pagination-link, .pagination-next, .pagination-previous, .select select, .textarea {
+  border-radius: 0;
+}
