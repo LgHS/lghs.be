@@ -195,7 +195,7 @@ footer .name {
 
 .wire {
   background: #FFFFFF;
-  border: 1px solid #000000;
+  border: 1px solid #BBB;
   padding-bottom: calc(0.5em - 1px);
   padding-left: 1em;
   padding-right: 1em;
