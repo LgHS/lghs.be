@@ -13,13 +13,10 @@
         </a>
       </div>
       <div id="navbarBasicExample" class="navbar-menu" :class="{ 'is-active': NavbarisActive }">
-        <div class="navbar-start">
+        <div class="navbar-end">
           <g-link v-for="(item, index) in menu" class="navbar-item" :to="item.url" :key="index" active-class="is-active">
             {{ item.title }}
           </g-link>
-        </div>
-
-        <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
               <span v-if="spaceapi" class="button has-tooltip-arrow has-tooltip-left" :data-tooltip="spaceapi.state.message" :class="{ 'is-success': spaceapi.state.open, 'is-danger': !spaceapi.state.open }">
@@ -36,7 +33,7 @@
 
     <section id="bottom">
       <div class="container">
-        <div class="tile">
+        <div class="columns">
           <div class="tile is-parent">
             <article class="tile is-child box">
               <p class="title">Communiquez</p>
