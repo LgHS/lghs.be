@@ -114,6 +114,6 @@ export default {
   margin-right: 1rem;
 }
 #content {
-  margin-top: -200px;
+  margin-top: -140px;
 }
 </style>
