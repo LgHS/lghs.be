@@ -16,7 +16,28 @@
     </section>
     <section id="content" class="section">
       <div class="container">
-        <VueRemarkContent />
+        <section class="articles">
+          <div class="column is-8 is-offset-2">
+            <!-- START ARTICLE -->
+            <div class="card article">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content has-text-centered">
+                    <div class="tags has-addons level-item">
+                      <span class="tag is-rounded">
+                        {{ $page.articles.date }}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content article-body">
+                  <VueRemarkContent />
+                </div>
+              </div>
+            </div>
+            <!-- END ARTICLE -->
+          </div>
+        </section>
       </div>
     </section>
   </Layout>
@@ -44,6 +65,41 @@ query Articles ($id: ID!) {
     title
     subtitle
     cover
+    date
   }
 }
 </page-query>
+
+<style scoped>
+
+.hero-body
+{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+
+.articles {
+  margin: 5rem 0;
+  margin-top: -200px;
+}
+.articles .content p {
+  line-height: 1.9;
+  margin: 15px 0;
+}
+.article-title {
+  font-size: 2rem;
+  font-weight: lighter;
+  line-height: 2;
+}
+.article-subtitle {
+  color: #909AA0;
+  margin-bottom: 3rem;
+}
+.article-body {
+  line-height: 1.4;
+  margin: 0 6rem;
+}
+</style>
