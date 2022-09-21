@@ -15,8 +15,8 @@ module.exports = {
       options: {
         typeName: 'Pages', // Required
         baseDir: './content/pages', // Where .md files are located
-        template: './src/templates/Pages.vue' // Optional
-      }
+        template: './src/templates/Pages.vue', // Optional
+      },
     },
     {
       use: '@gridsome/vue-remark',
@@ -24,8 +24,8 @@ module.exports = {
         typeName: 'Articles', // Required
         baseDir: './content/articles', // Where .md files are located
         pathPrefix: '/blog/',
-        template: './src/templates/Articles.vue' // Optional
-      }
+        template: './src/templates/Articles.vue', // Optional
+      },
     },
     {
       use: '@gridsome/vue-remark',
@@ -33,8 +33,8 @@ module.exports = {
         typeName: 'Equipements', // Required
         baseDir: './content/equipements', // Where .md files are located
         pathPrefix: '/equipements/',
-        template: './src/templates/Equipements.vue' // Optional
-      }
+        template: './src/templates/Equipements.vue', // Optional
+      },
     },
     {
       use: '@gridsome/vue-remark',
@@ -42,8 +42,8 @@ module.exports = {
         typeName: 'Projets', // Required
         baseDir: './content/projets', // Where .md files are located
         pathPrefix: '/projets/',
-        template: './src/templates/Projets.vue' // Optional
-      }
+        template: './src/templates/Projets.vue', // Optional
+      },
     },
     {
       use: '@gridsome/plugin-sitemap',
@@ -53,17 +53,17 @@ module.exports = {
             changefreq: 'monthly',
             priority: 0.7,
             lastmod: '2021-12-31',
-          }
-        }
-      }
+          },
+        },
+      },
     },
     {
       use: 'gridsome-plugin-gtm',
       options: {
         id: 'GTM-XXXXXXX',
         enabled: true,
-        debug: true
-      }
-    }
-  ]
+        debug: true,
+      },
+    },
+  ],
 }
