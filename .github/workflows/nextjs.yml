@@ -33,6 +33,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with: 
+          clean: git clean -ffdx && git reset --hard HEAD
+          submodules: recursive
       - run: git pull --recurse-submodules
       - run: git submodule update --init --recursive --force
       - name: Detect package manager
