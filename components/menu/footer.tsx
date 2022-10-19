@@ -1,4 +1,4 @@
-import menu from '../../data/menu.json';
+import menu from '../../contents/_data/menu.json'
 import Link from 'next/link'
 
 const MenuHeader = () => {
