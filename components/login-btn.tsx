@@ -27,7 +27,7 @@ export default function Component() {
     }
     return (
         <>
-            <button className="button is-primary" onClick={() => signIn()}>Connexion</button>
+            <button className="button is-primary" onClick={() => signIn('keycloak')}>Connexion</button>
         </>
     )
 }
