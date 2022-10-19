@@ -33,10 +33,10 @@ jobs:
       - uses: iamsauravsharma/create-dotenv@v1.2.1
         with:
           env-prefix: 'ENV_KEY_'
+          file-name: '.env.local'
         env: # env available for only this steps
           ENV_KEY_NEXTAUTH_URL: ${{ secrets.NEXTAUTH_URL }}
           ENV_KEY_NEXTAUTH_SECRET: ${{ secrets.NO_SECRET }}
-      - run: cat .env
       - name: Detect package manager
         id: detect-package-manager
         run: |
