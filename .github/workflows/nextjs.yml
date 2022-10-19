@@ -35,9 +35,11 @@ jobs:
         uses: actions/checkout@v3
       - run: git submodule update --init --recursive --force --remote --merge
       - uses: iamsauravsharma/create-dotenv@v1.2.1
+        with:
+          env-prefix: 'ENV_KEY_'
         env: # env available for only this steps
-          NEXTAUTH_URL: ${{ secrets.NEXTAUTH_URL }}
-          NEXTAUTH_SECRET: ${{ secrets.NO_SECRET }}
+          ENV_KEY_NEXTAUTH_URL: "${{ secrets.NEXTAUTH_URL }}"
+          ENV_KEY_NEXTAUTH_SECRET: "${{ secrets.NO_SECRET }}"
       - run: cat .env
       - name: Detect package manager
         id: detect-package-manager
