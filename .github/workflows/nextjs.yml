@@ -35,10 +35,11 @@ jobs:
         uses: actions/checkout@v3
       - run: git submodule update --init --recursive --force --remote --merge
       - name: Make envfile
-        uses: SpicyPizza/create-envfile@v1.3
+        uses: SpicyPizza/create-envfile@v1
         with:
           envkey_NEXTAUTH_URL: ${{ secrets.NEXTAUTH_URL }}
           envkey_NEXTAUTH_SECRET: ${{ secrets.NO_SECRET }}
+          file_name: .env
           fail_on_empty: false
       - name: Detect package manager
         id: detect-package-manager
