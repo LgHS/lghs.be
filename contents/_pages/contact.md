@@ -1,13 +1,24 @@
 ---
-title: 'Contactez-nous'
+title: 'Contact'
 ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+*Préférez le mail pour nous joindre, le téléphone est celui de hackerspace à disposition de toutes les personnes présentes.*
 
-Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
+ - **Adresse :** Quai de la Dérivation 54, 4020 Liège (Belgique)
+ - **Mails** 
+	 - Général : ping [at] lghs.be
+	 - Administratif : admin [at] lghs.be
+	 - Comptabilité : compta [at] lghs.be
+ - **Téléphone :** +32 (0) 4 287 32 26
 
-## Lorem Ipsum
+### Social
+ - Twitter : [twitter.com/LgHackerSpace](https://twitter.com/LgHackerSpace)
+ - Facebook : [facebook.com/liegehackerspace](https://www.facebook.com/liegehackerspace/)
+ - Instagram : [instagram.com/lghackerspace](https://www.instagram.com/lghackerspace/)
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+### Légal
+
+ - BCE : [BE0649.448.256](https://kbopub.economie.fgov.be/kbopub/toonondernemingps.html?ondernemingsnummer=649448256)
+ - Banque (Belfius) : BE58 0689 1071 8879 -  *BIC GKCCBEBB*
