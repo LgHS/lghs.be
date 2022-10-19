@@ -1,0 +1,26 @@
+[
+    {
+        "to": "/blog",
+        "title": "Blog"
+    },
+    {
+        "to": "/projets",
+        "title": "Projets"
+    },
+    {
+        "to": "/soutenir",
+        "title": "Nous soutenir"
+    },
+    {
+        "to": "/equipements",
+        "title": "Equipements"
+    },
+    {
+        "to": "https://wiki.lghs.be",
+        "title": "Wiki"
+    },
+    {
+        "to": "/contact",
+        "title": "Contact"
+    }
+]

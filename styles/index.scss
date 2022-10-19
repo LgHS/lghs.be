@@ -1,0 +1,144 @@
+$primary: #000000;
+@import '~bulma/bulma';
+
+.is-sticky {
+    position: sticky;
+}
+.hero {
+    &.has-background {
+        position: relative;
+    }
+    &-background {
+        position: absolute;
+        object-fit: cover;
+        object-position: center center;
+        width: 100%;
+        height: 100%;
+    }
+    &.is-transparent {
+        opacity: 0.3;
+    }
+}
+
+.image {
+    img {
+        object-fit: cover;
+    }
+}
+
+.tile {
+    .title {
+        color: #000;
+    }
+}
+
+.logo {
+    max-height: 5.75rem !important;
+    height: 5.75rem;
+}
+html, body, #app {
+    height: 100%;
+}
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100%;
+}
+nav#nav__main {
+    flex: none;
+}
+#app > section {
+    flex-shrink: 1;
+}
+section#content {
+    flex-grow: 1;
+}
+footer {
+    margin-top: 2rem;
+    flex-shrink: 1;
+}
+footer .name {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.footer-content {
+    width: 100%;
+}
+.footer-social-links {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.footer-social-links li {
+    display: inline;
+}
+.footer-social-links li a {
+    font-size: 17px;
+    padding: 5px 10px;
+    color: #BBBBBB;
+}
+.soutien {
+    float: right;
+}
+
+.wire {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    padding-bottom: calc(0.5em - 1px);
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: calc(0.5em - 1px);
+    border-radius: 0.4em;
+    font-size: 15px;
+    height: 3.8rem;
+    width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-social-links {
+        text-align: left;
+    }
+
+    footer .name {
+        text-align: left;
+        margin-bottom: 0;
+    }
+}
+
+.paypal {
+    background: #0079C1;
+    color: #00457C;
+    border: 1px solid #00457C;
+    height: 3.8rem;
+    width: 100%;
+}
+.patreon {
+    background: #f96854;
+    color: #052d49;
+    border: 1px solid #052d49;
+    height: 3.8rem;
+    width: 100%;
+}
+
+.card-image .image {
+    width: 100%;
+}
+
+.subtitle.date {
+    font-size: .75rem;
+}
+
+.subtitle {
+    display: inline-block;
+    &+ .date {
+        margin-left: 2rem;
+    }
+}

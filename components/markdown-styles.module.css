@@ -1,0 +1,22 @@
+.markdown {
+  @apply text-lg leading-relaxed;
+}
+
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote {
+  margin: 0.75rem 0;
+}
+
+.markdown h2 {
+  font-size: 1.45rem;
+  font-weight: bold;
+  margin: 1rem 0 0.50rem;
+}
+
+.markdown h3 {
+  font-size: 1.35rem;
+  font-weight: bold;
+  margin: 1rem 0 0.50rem;
+}
