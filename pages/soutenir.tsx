@@ -20,6 +20,7 @@ export default function Contact({ page, preview }: Props) {
   if (!router.isFallback && !page?.slug) {
     return <ErrorPage statusCode={404} />
   }
+  console.log(process.env.NEXTAUTH_URL)
   return (
     <Layout preview={preview}>
         {router.isFallback ? (

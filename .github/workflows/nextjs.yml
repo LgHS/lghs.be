@@ -1,7 +1,3 @@
-# Sample workflow for building and deploying a Next.js site to GitHub Pages
-#
-# To get started with Next.js see: https://nextjs.org/docs/getting-started
-#
 name: Deploy Next.js site to Pages
 
 on:
@@ -38,8 +34,8 @@ jobs:
         with:
           env-prefix: 'ENV_KEY_'
         env: # env available for only this steps
-          ENV_KEY_NEXTAUTH_URL: "${{ secrets.NEXTAUTH_URL }}"
-          ENV_KEY_NEXTAUTH_SECRET: "${{ secrets.NO_SECRET }}"
+          ENV_KEY_NEXTAUTH_URL: ${{ secrets.NEXTAUTH_URL }}
+          ENV_KEY_NEXTAUTH_SECRET: ${{ secrets.NO_SECRET }}
       - run: cat .env
       - name: Detect package manager
         id: detect-package-manager
