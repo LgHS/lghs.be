@@ -36,8 +36,7 @@ jobs:
         with: 
           clean: git clean -ffdx && git reset --hard HEAD
           submodules: recursive
-      - run: git pull --recurse-submodules
-      - run: git submodule update --init --recursive --force
+      - run: cd contents && git pull origin master && cd ..
       - name: Detect package manager
         id: detect-package-manager
         run: |
