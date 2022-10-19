@@ -21,7 +21,7 @@ export default function Blog({ post, preview }: Props) {
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
-  const title =  '${projet.title} | ${CMS_NAME}';
+  const title =  `${post.title} | ${CMS_NAME}`;
   return (
     <Layout preview={preview}>
         {router.isFallback ? (

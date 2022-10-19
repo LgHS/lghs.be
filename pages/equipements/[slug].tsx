@@ -20,7 +20,7 @@ export default function Blog({ equipement, preview }: Props) {
   if (!router.isFallback && !equipement?.slug) {
     return <ErrorPage statusCode={404} />
   }
-  const title =  '${projet.title} | ${CMS_NAME}';
+  const title =  `${equipement.title} | ${CMS_NAME}`;
   return (
     <Layout preview={preview}>
         {router.isFallback ? (
