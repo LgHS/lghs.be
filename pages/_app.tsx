@@ -3,8 +3,6 @@ import { SessionProvider } from "next-auth/react"
 import { Session } from "next-auth";
 import '../styles/index.scss'
 
-console.log(process.env.NEXTAUTH_URL)
-
 export default function MyApp({ Component, pageProps,
 }: AppProps<{
   session: Session;
