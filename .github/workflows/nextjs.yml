@@ -83,6 +83,9 @@ jobs:
           NO_SECRET:  ${{ secrets.NO_SECRET }}
       - name: Static HTML export with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
+        env:
+          NEXTAUTH_URL: ${{ secrets.NEXTAUTH_URL }}
+          NO_SECRET:  ${{ secrets.NO_SECRET }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
