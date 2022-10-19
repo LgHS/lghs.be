@@ -23,19 +23,15 @@ export default function Index({ allPosts }: Props) {
                   Un Hackerspace est un <strong>tiers-lieu</strong>, un espace où des gens avec un intérêt commun (souvent autour de l’informatique, de la technologie, des sciences, des arts…) peuvent <strong>se rencontrer et collaborer</strong>.
                   <br />Les Hackerspaces peuvent être vus comme des laboratoires communautaires ouverts où des gens (les hackers) peuvent partager ressources, savoirs,…
                 </div>
-                <div className="column is-4">
-                  <figure className="image is-4by2">
-                    <Image src="/img/minitel-open.jpeg"/>
-                  </figure>
+                <div className="column is-4" style={{position: 'relative'}}>
+                    <Image src="/img/minitel-open.jpeg" layout="fill" objectFit={'cover'}/>
                 </div>
               </div>
             </div>
             <div className="row">
               <div className="columns">
-                <div className="column is-4">
-                  <figure className="image is-4by3">
-                    <Image src="/img/mainroom-min.jpeg"/>
-                  </figure>
+                <div className="column is-4" style={{position: 'relative'}}>
+                  <Image src="/img/mainroom-min.jpeg" layout="fill" objectFit={'cover'}/>
                 </div>
                 <div className="column is-8">
                     <h4 className="is-size-4">Ce n’est pas un groupe de pirates informatiques</h4>

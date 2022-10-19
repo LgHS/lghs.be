@@ -38,9 +38,15 @@ export default function Contact({ page, preview }: Props) {
               title={page.title}
               coverImage={page.coverImage}
             />
-            <Map className={styles.homeMap} center={DEFAULT_CENTER} zoom={15} />
+            <div className='columns'>
+              <div className='column'>
+                <PostBody content={page.content} />
+              </div>
+              <div className='column'>
+                <Map className={styles.homeMap} center={DEFAULT_CENTER} zoom={15} />
+              </div>
+            </div>
             
-            <PostBody content={page.content} />
           </>
         )}
     </Layout>

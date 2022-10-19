@@ -8,7 +8,7 @@ const Header = () => {
           <div className="navbar-brand">
               <Link href="/">
                 <a className="navbar-item" href="/">
-                  <Image src="/img/logo.png" className="logo"/>
+                  <Image src="/img/logo.png" className="logo" layout="fixed" width={315} height={92}/>
                 </a>
               </Link>
               <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
