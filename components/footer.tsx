@@ -1,5 +1,6 @@
 import Container from './container'
 import MenuFooter from './menu/footer'
+import Image from 'next/image'
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
                 <div className="pb-4 is-flex is-flex-wrap-wrap is-justify-content-between is-align-items-center">
                     <div className="mr-auto mb-2">
                         <a className="is-inline-block" href="#">
-                            <img className="image" src="/img/logo.png" alt="" width="96px"/>
+                            <Image className="image" src="/img/logo.png" alt="" width="96px"/>
                         </a>
                     </div>
                     <div>

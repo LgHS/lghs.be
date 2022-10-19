@@ -1,5 +1,6 @@
 import MenuHeader from './menu/header'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Header = () => {
   return (
@@ -7,7 +8,7 @@ const Header = () => {
           <div className="navbar-brand">
               <Link href="/">
                 <a className="navbar-item" href="/">
-                  <img src="/img/logo.png" className="logo"/>
+                  <Image src="/img/logo.png" className="logo"/>
                 </a>
               </Link>
               <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">

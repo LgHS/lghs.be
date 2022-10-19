@@ -2,6 +2,7 @@ import Container from '../components/container'
 import Layout from '../components/layout'
 import { getAllBlog } from '../lib/api'
 import Post from '../interfaces/blog'
+import Image from 'next/image'
 
 type Props = {
   allPosts: Post[]
@@ -24,7 +25,7 @@ export default function Index({ allPosts }: Props) {
                 </div>
                 <div className="column is-4">
                   <figure className="image is-4by2">
-                    <img src="/img/minitel-open.jpeg"/>
+                    <Image src="/img/minitel-open.jpeg"/>
                   </figure>
                 </div>
               </div>
@@ -33,7 +34,7 @@ export default function Index({ allPosts }: Props) {
               <div className="columns">
                 <div className="column is-4">
                   <figure className="image is-4by3">
-                    <img src="/img/mainroom-min.jpeg"/>
+                    <Image src="/img/mainroom-min.jpeg"/>
                   </figure>
                 </div>
                 <div className="column is-8">
