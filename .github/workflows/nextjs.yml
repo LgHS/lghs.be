@@ -34,6 +34,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - run: git submodule update --init --recursive --force --remote --merge
+      - run: cat .env
       - name: Make envfile
         uses: SpicyPizza/create-envfile@v1
         with:
