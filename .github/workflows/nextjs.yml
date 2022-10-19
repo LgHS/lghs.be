@@ -30,13 +30,16 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
-    env:
-      NEXTAUTH_URL: ${{ secrets.NEXTAUTH_URL }}
-      NO_SECRET:  ${{ secrets.NO_SECRET }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
       - run: git submodule update --init --recursive --force --remote --merge
+      - name: Make envfile
+        uses: SpicyPizza/create-envfile@v1.3
+        with:
+          envkey_NEXTAUTH_URL: ${{ secrets.NEXTAUTH_URL }}
+          envkey_NEXTAUTH_SECRET: ${{ secrets.NO_SECRET }}
+          fail_on_empty: false
       - name: Detect package manager
         id: detect-package-manager
         run: |
