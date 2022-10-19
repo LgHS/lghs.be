@@ -34,7 +34,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - run: git pull --recurse-submodules
-      - run: git submodule update --remote --recursive
+      - run: git submodule update --init --recursive --force
       - name: Detect package manager
         id: detect-package-manager
         run: |
