@@ -1,6 +1,5 @@
 import menu from '../../data/menu.json';
 import Link from 'next/link'
-import LoginBtn from '../login-btn';
 
 const MenuHeader = () => {
     return (
@@ -12,7 +11,7 @@ const MenuHeader = () => {
             <div className="navbar-end">
                 <div className="navbar-item">
                     <div className="buttons">
-                        <LoginBtn/> 
+                        
                     </div>
                 </div>
             </div>
