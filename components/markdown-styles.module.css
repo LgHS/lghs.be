@@ -20,6 +20,13 @@
   margin: 1rem 0 0.50rem;
 }
 
+.markdown h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 1rem 0 0.50rem;
+}
+
+
 .markdown ul li{
   list-style: none;
   margin: 0.25rem 0 0.25rem 1.25rem;

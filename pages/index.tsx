@@ -1,61 +1,24 @@
 import Container from '../components/container'
 import Layout from '../components/layout'
-import { getAllBlog } from '../lib/api'
+import { getAllBlog, getPagesBySlug } from '../lib/api'
 import Post from '../interfaces/blog'
 import Image from 'next/image'
+import markdownToHtml from '../lib/markdownToHtml'
+import PageType from '../interfaces/page'
+import PostBody from '../components/post-body'
+
 
 type Props = {
-  allPosts: Post[]
+  page: PageType
+  preview?: boolean
 }
 
-export default function Index({ allPosts }: Props) {
-  const heroPost = allPosts[0]
-  const morePosts = allPosts.slice(1)
+export default function Index({ page, preview }: Props) {
   return (
     <>
       <Layout>
-        <section className="section">
-          <Container>
-            <div className="row">
-              <div className="columns">
-                <div className="column is-8">
-                  <h2 className="is-size-2">A propos</h2>
-                  Un Hackerspace est un <strong>tiers-lieu</strong>, un espace où des gens avec un intérêt commun (souvent autour de l’informatique, de la technologie, des sciences, des arts…) peuvent <strong>se rencontrer et collaborer</strong>.
-                  <br />Les Hackerspaces peuvent être vus comme des laboratoires communautaires ouverts où des gens (les hackers) peuvent partager ressources, savoirs,…
-                </div>
-                <div className="column is-4" style={{position: 'relative'}}>
-                    <Image src="/img/minitel-open.jpeg" layout="fill" objectFit={'cover'}/>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="columns">
-                <div className="column is-4" style={{position: 'relative'}}>
-                  <Image src="/img/mainroom-min.jpeg" layout="fill" objectFit={'cover'}/>
-                </div>
-                <div className="column is-8">
-                    <h4 className="is-size-4">Ce n’est pas un groupe de pirates informatiques</h4>
-                  <p className="mb-2">
-                    Le terme “hacker”, galvaudé en français, ne se réfère pas ici au “pirate informatique”.
-                    Il s’agit plutôt d’un bidouilleur, d’une personne curieuse capable d’apprendre et partager
-                    le savoir, de se poser des questions et de créer de nouvelles choses.
-                  </p>
-                    <h4 className="is-size-4">Ce n’est pas un FabLab</h4>
-                  <p className="mb-2">
-                    Ces dernières années, “FabLab” est devenu un terme fourre-tout, utilisé pour désigner aussi
-                    bien des FabLabs, MakerSpaces, TechShops, HackerSpaces,… Flossmanuals résume très bien les
-                    différences entres ces lieux
-                  </p>
-                    <h4 className="is-size-4">C’est un lieu indépendant</h4>
-                  <p>
-                    Le financement structurel provient uniquement des membres via les cotisations et de nos
-                    différentes activités (workshops, événements, …).
-                  </p>
-                </div>
-              </div>
-            </div>
-          </Container>
-        </section>
+        <PostBody content={page.content} />
+        
         <section className="section has-background-primary">
             <div className="container">
                 <div className="is-vcentered columns is-multiline">
@@ -82,16 +45,22 @@ export default function Index({ allPosts }: Props) {
   )
 }
 
-export const getStaticProps = async () => {
-  const allPosts = getAllBlog([
+export async function getStaticProps() {
+  const page = getPagesBySlug("index", [
     'title',
-    'date',
     'slug',
+    'content',
+    'ogImage',
     'coverImage',
-    'excerpt',
   ])
+  const content = await markdownToHtml(page.content || '')
 
   return {
-    props: { allPosts },
+    props: {
+      page: {
+        ...page,
+        content,
+      },
+    },
   }
 }
