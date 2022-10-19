@@ -33,8 +33,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        with: 
-          submodules: recursive
       - run: git submodule update --init --recursive --force --remote --merge
       - name: Detect package manager
         id: detect-package-manager
