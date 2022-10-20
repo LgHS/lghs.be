@@ -3,6 +3,7 @@ import html from 'remark-html'
 import remarkDirective from 'remark-directive'
 import {visit} from 'unist-util-visit'
 import {h} from 'hastscript'
+import { Element } from 'hast-util-to-html/lib/types'
 
 export default async function markdownToHtml(markdown: string) {
   const result = await remark().use(html, {sanitize: false}).use(remarkDirective).use(myRemarkPlugin).process(markdown)
@@ -42,7 +43,7 @@ function myRemarkPlugin() {
               className
             }
           } else {
-            const hast = h(node.name, node.attributes)
+            const hast = h(node.name, node.attributes) as unknown as Element
     
             data.hName = hast.tagName
             data.hProperties = hast.properties
